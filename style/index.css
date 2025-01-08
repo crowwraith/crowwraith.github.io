@@ -16,6 +16,12 @@ body{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+button i.fa-solid{
+    display: none;
+}
+.testkleur{
+    display: none;
+}
 .header-buttonbar-desktop{
     display: flex;
     height: 140px;
@@ -195,15 +201,31 @@ body{
     /*start header mobile */
     .header-Main-desktop{
         display: flex;
-        height:30px;
+        height:60px;
         width: 90%;
         margin-left: 5%;
         margin-top: 0;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: rgb(2, 24, 36);
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+    }
+    .testkleur{
+        display: flex;
+        margin-left: 20px;
+        height: 45px;
+        width: 60px;
+        background-color: beige;
+        border-color: darkmagenta;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    button i.fa-solid{
+        display: flex;
+
+        font-size: 35px;
     }
     .header-buttonbar-desktop{
         display: none;
