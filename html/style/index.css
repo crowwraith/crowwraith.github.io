@@ -1,0 +1,310 @@
+body{
+    background:linear-gradient(to bottom left,rgb(16, 8, 44),rgb(46, 8, 86)
+    ,rgb(61, 17, 98),rgb(66, 29, 137),rgb(24, 40, 144),rgb(17, 58, 178),rgb(0, 255, 255));
+    color: white;
+}
+/* start header */
+.header-Main-desktop{
+    display: flex;
+    height:172px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 24, 36);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.header-buttonbar-desktop{
+    display: flex;
+    height: 140px;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-buttons-desktop{
+    display: flex;
+    height: 60px;
+    width: 30%;
+    background-color: #fffdd0;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px;
+    border-color: #7851A9;
+}
+.header-github-desktop{
+    display: flex;
+    height: 120px;
+    width: 200px;
+    background-color: #7851A9;
+    font-weight: bolder;
+    border-radius: 25px;
+    margin-left: 250px;
+    margin-top: 10px;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-image-desktop{
+    height: 100px;
+    width: 160px;
+}
+/* start main story css */
+.main-about-desktop{
+    display: flex;
+    width: 	90%;
+    height: 354px;
+    background-color: rgba(2, 24, 36, 0.7);
+    margin-left: 5%;
+    margin-top: 22px;
+    border-radius: 25px;
+}
+.main-text-desktop{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    flex-direction: column;
+}
+.main-img-desktop{
+    display: flex;
+    height: 280px;
+    width: 220px;
+    margin-top: 2%;
+    margin-right: 5%;
+    border-radius: 50px;
+}
+
+/* start projects css */
+.projects-main-desktop{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 22px;
+}
+.projects-box1-desktop{
+    display: flex;
+    height: 600px;
+    width: 380px;
+    flex-direction: column;
+    background-color: #021824;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.projects-box2-desktop{
+    display: flex;
+    height: 600px;
+    width: 380px;
+    flex-direction: column;
+    background-color: #021824;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.margins-project-desktop{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.projects-mastermindimg-desktop{
+    display: flex;
+    width: 180px;
+    height: 200px;
+}
+/* start more information */
+.more-workmain-desktop ,.more-hobbiesmain-desktop{
+    display: flex;
+    width: 	90%;
+    height: 354px;
+    background-color: rgba(2, 24, 36, 0.7);
+    margin-left: 5%;
+    margin-top: 22px;
+    border-radius: 25px;
+}
+.more-hobbiesIMG-desktop{
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+/* start footer */
+.footer-main-desktop{
+    display: flex;
+    height:172px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 22px;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(2, 24, 36);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.footer-github-desktop{
+    display: flex;
+    height: 120px;
+    width: 200px;
+    background-color: #7851A9;
+    font-weight: bolder;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+}
+.footer-image-desktop{
+    height: 100px;
+    width: 160px;
+}
+/* start kleurenindex */
+.blue-desktop{
+    display: flex;
+    background-color: blue;
+}
+/* positioning */
+.center-horizontal-desktop{
+    display: flex;
+    justify-content: center;
+}
+.margins-p-desktop{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+@media only screen and  (max-width: 800px) {
+    /*start header mobile */
+    .header-Main-desktop{
+        display: flex;
+        height:30px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(2, 24, 36);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .header-buttonbar-desktop{
+        display: none;
+    }
+    .header-buttons-desktop{
+        display: none;
+    }
+    .header-github-desktop{
+        display: none;
+    }
+    .header-image-desktop{
+        display: none;      
+    }
+    /* start main story css */
+    .main-about-desktop{
+        display: flex;
+        width: 	90%;
+        height: 350px;
+        background-color: rgba(2, 24, 36, 0.7);
+        margin-left: 5%;
+        margin-top: 12px;
+        border-radius: 25px;
+    }
+    .main-text-desktop{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-right: 5%;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .main-img-desktop{
+        display: none;
+    }
+    
+    /* start projects css, klikken om door te bladeren, github hier achteraan zetten */
+    .projects-main-desktop{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 22px;
+    }
+    .projects-box1-desktop{
+        display: flex;
+        height: 600px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #021824;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .projects-box2-desktop{
+        display: none;
+    }
+    .margins-project-desktop{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+    }
+    .projects-mastermindimg-desktop{
+        display: flex;
+        width: 180px;
+        height: 200px;
+    }
+    /* start more information, contactinformatie op 1ste blad zetten */
+    .more-workmain-desktop{
+        display: flex;
+        width: 	90%;
+        height: 354px;
+        background-color: rgba(2, 24, 36, 0.7);
+        margin-left: 5%;
+        margin-top: 22px;
+        border-radius: 25px;
+    }
+    .more-workIMG-desktop{
+        display: none;
+    }
+    .more-hobbiesmain-desktop{
+        display: none;
+        width: 	90%;
+        height: 354px;
+        background-color: rgba(2, 24, 36, 0.7);
+        margin-left: 5%;
+        margin-top: 22px;
+        border-radius: 25px;   
+    }
+    .more-hobbiesIMG-desktop{
+        display: none;
+    }
+    /*hiding the footer */
+    .footer-main-desktop{
+        display: none;
+    }
+    .footer-github-desktop{
+    display: none;
+    }
+    .footer-image-desktop{
+        display: none;
+    }
+}
