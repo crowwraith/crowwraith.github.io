@@ -143,6 +143,16 @@ button i.fa-solid{
     margin-top: 5%;
     margin-right: 5%;
 }
+/*contact-information */
+.more-contactmain-desktop{
+    display: flex;
+    width: 	90%;
+    height: 354px;
+    background-color: rgba(2, 24, 36, 0.7);
+    margin-left: 5%;
+    margin-top: 22px;
+    border-radius: 25px;
+}
 /* start footer */
 .footer-main-desktop{
     display: flex;
@@ -264,11 +274,11 @@ button i.fa-solid{
     /* start projects css, klikken om door te bladeren, github hier achteraan zetten */
     .projects-main-desktop{
         display: flex;
-        justify-content: space-between;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 22px;
+        align-items: flex-start;
     }
     .projects-box1-desktop{
         display: flex;
@@ -277,13 +287,20 @@ button i.fa-solid{
         flex-direction: column;
         background-color: #021824;
         border-radius: 25px;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
+
     }
     .projects-box2-desktop{
         display: none;
     }
     .margins-project-desktop{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+    }
+    .margins-project-mobile{
         display: flex;
         margin-left: 5%;
         margin-right: 5%;
@@ -319,6 +336,9 @@ button i.fa-solid{
     .more-hobbiesIMG-desktop{
         display: none;
     }
+    .more-contactmain-desktop{
+        display: none;
+    }
     /*hiding the footer */
     .footer-main-desktop{
         display: none;
@@ -329,4 +349,12 @@ button i.fa-solid{
     .footer-image-desktop{
         display: none;
     }
+    /*positioning text */
+    .margins-p-desktop{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    flex-direction: column;
+}
 }
