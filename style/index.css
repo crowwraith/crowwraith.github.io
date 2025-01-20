@@ -87,6 +87,9 @@ button i.fa-solid{
     border-radius: 50px;
 }
 
+
+
+
 /* start projects css */
 .projects-main-desktop{
     display: flex;
@@ -106,6 +109,16 @@ button i.fa-solid{
     justify-content: flex-start;
 }
 .projects-box2-desktop{
+    display: flex;
+    height: 600px;
+    width: 380px;
+    flex-direction: column;
+    background-color: #021824;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.projects-box3-desktop{
     display: flex;
     height: 600px;
     width: 380px;
@@ -294,8 +307,11 @@ button i.fa-solid{
     .projects-box2-desktop{
         display: none;
     }
+    .projects-box3-desktop{
+        display: none;
+    }
     .margins-project-desktop{
-        display: flex;
+        display: inherit;
         margin-left: 5%;
         margin-right: 5%;
         max-width: 90%;

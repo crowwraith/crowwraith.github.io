@@ -10,9 +10,35 @@
   <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
 </head>
 <script>
-    if{
-schrmmaat uitmeten met javascript. breakpoint op 1000 px 
-    }
+    let screensizes = 1000
+        let counter = 1;
+        function hideNavigatie() {
+            console.log(screen.width);
+            if(screen.width < screensizes){
+                if(counter == 1){
+                counter++;
+                
+                document.getElementById("p-box1").style.display = "none";
+                document.getElementById("p-box2").style.display = "flex";
+                document.getElementById("menu-icon1").style.display = "none";
+                document.getElementById("menu-icon2").style.display = "block";
+            }
+            else if (counter == 2){
+                counter++;
+                document.getElementById("p-box2").style.display = "none";
+                document.getElementById("p-box3").style.display = "flex";
+                document.getElementById("menu-icon2").style.display = "none";
+                document.getElementById("menu-icon3").style.display = "block";
+            }
+            else if(counter == 3){
+                counter =1;
+                document.getElementById("p-box3").style.display = "none";
+                document.getElementById("p-box1").style.display = "flex";
+                document.getElementById("menu-icon3").style.display = "none";
+                document.getElementById("menu-icon1").style.display = "block";
+            } 
+            }
+        }
 </script>
 <body>
     <!--start header-->
@@ -61,26 +87,26 @@ schrmmaat uitmeten met javascript. breakpoint op 1000 px
         </div>
         <!-- start projects-->
         <div class="projects-main-desktop" id="work">
-            <div class="projects-box1-desktop">
+            <div class="projects-box1-desktop" id="p-box1">
                 <h3 class="margins-project-mobile">pinkgoose school project</h3>
-                <img class="margins-project-mobile" src="images/pinkgoose.PNG" alt="the title of a project called pinkgoose">
+                <img class="margins-project-mobile" src="images/pinkgoose.PNG" alt="the title of a project called pinkgoose" id="p-img1">
                 <p class="margins-project-desktop">
                     pinkgoose was my starting project for website design for my first school periode. We where told to make a website based on a figma design,
                      this was also the first time i did anything with HTML, and in hindsight i could have done a lot different. but i still feel like its inportant to
                     show where we started
                 </p>
             </div>
-            <div class="projects-box2-desktop">
+            <div class="projects-box2-desktop" id="p-box2">
                 <h3>mastermind school project</h3>
-                <img src="images/mastermind.picture-figma.jpg" alt="a picture of the boardgame mastermind" class="projects-mastermindimg-desktop">
+                <img src="images/mastermind.picture-figma.jpg" alt="a picture of the boardgame mastermind" class="projects-mastermindimg-desktop" id="p-img2">
                 <p class="margins-project-desktop">
                     mastermind was the first java project i made, like pinkgoose this was done in the first periode of my schooling, and the first time i did anything with java
                     this project was also updated in the 2nd periode of classes (though i dont think thats showing on github atm.) 
                 </p>
             </div>
-            <div class="projects-box2-desktop">
+            <div class="projects-box3-desktop" id="p-box3">
                 <h3>titel project 3</h3>
-                <img src="img" alt="">
+                <img src="img" alt="" id="p-img3">
                 <p class="margins-project-desktop">
                     this area will be used later to go to a seperate page with my projects, currently this is unnessesairy since I
                      dont have a lot of projects i want to share 
