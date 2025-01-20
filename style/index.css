@@ -2,6 +2,7 @@ body{
     background:linear-gradient(to bottom left,rgb(16, 8, 44),rgb(46, 8, 86)
     ,rgb(61, 17, 98),rgb(66, 29, 137),rgb(24, 40, 144),rgb(17, 58, 178),rgb(0, 255, 255));
     color: white;
+    margin: 0%;
 }
 /* start header */
 .header-Main-desktop{
