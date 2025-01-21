@@ -11,35 +11,58 @@
 </head>
 <script>
     let screensizes = 1000
-        let counter = 1;
-        function hideNavigatie() {
+        let counter = 0;
+        function toggleDisplay() {
             console.log(screen.width);
             if(screen.width < screensizes){
+                if(counter == 0){
+                counter++;
+                document.getElementById("p-info").style.display = "none";
+                document.getElementById("p-box1").style.display = "flex";
+                document.getElementById("p-infoheader").style.display = "none";
+                document.getElementById("p-h1").style.display = "flex";
+                document.getElementById("p-img1").style.display = "flex";
+                document.getElementById("p-infotext").style.display = "none";    
+                }
+
                 if(counter == 1){
                 counter++;
-                
                 document.getElementById("p-box1").style.display = "none";
                 document.getElementById("p-box2").style.display = "flex";
-                document.getElementById("menu-icon1").style.display = "none";
-                document.getElementById("menu-icon2").style.display = "flex";
+                document.getElementById("p-h1").style.display = "none";
+                document.getElementById("p-h2").style.display = "flex";
+                document.getElementById("p-img1").style.display = "none";
+                document.getElementById("p-img2").style.display = "flex";
+                document.getElementById("p-p1").style.display = "none";
+                document.getElementById("p-p2").style.display = "flex";
             }
             else if (counter == 2){
                 counter++;
                 document.getElementById("p-box2").style.display = "none";
                 document.getElementById("p-box3").style.display = "flex";
-                document.getElementById("menu-icon2").style.display = "none";
-                document.getElementById("menu-icon3").style.display = "flex";
+                document.getElementById("p-h2").style.display = "none";
+                document.getElementById("p-h3").style.display = "flex";
+                document.getElementById("p-img2").style.display = "none";
+                document.getElementById("p-img3").style.display = "flex";
+                document.getElementById("p-p2").style.display = "none";
+                document.getElementById("p-p3").style.display = "flex";
             }
             else if(counter == 3){
                 counter =1;
                 document.getElementById("p-box3").style.display = "none";
                 document.getElementById("p-box1").style.display = "flex";
-                document.getElementById("menu-icon3").style.display = "none";
-                document.getElementById("menu-icon1").style.display = "flex";
+                document.getElementById("p-h3").style.display = "none";
+                document.getElementById("p-h1").style.display = "flex";
+                document.getElementById("p-img3").style.display = "none";
+                document.getElementById("p-img1").style.display = "flex";
+                document.getElementById("p-p3").style.display = "none";
+                document.getElementById("p-p1").style.display = "flex";
             } 
             }
         }
 </script>
+
+
 <body>
     <!--start header-->
     <header>
@@ -66,6 +89,8 @@
             </a>
         </div>
     </header>
+
+
     <!--start main-->
     <main>
         <div class="main-about-desktop">
@@ -85,35 +110,61 @@
             </div>
             <img class="main-img-desktop" src="images/main-me.jpg" alt="picture of the website maker">
         </div>
-        <!-- start projects-->
+
+
+
+        <!-- start projects function nog inzetten-->
         <div class="projects-main-desktop" id="work">
-            <div class="projects-box1-desktop" id="p-box1">
-                <h3 class="margins-project-mobile">pinkgoose school project</h3>
+
+            <div onclick="toggleDisplay()" class="projects-info-desktop" id="p-info">
+                <h3 class="margins-project-mobile" id="p-infoheader">click this box</h3>
+                <p class="margins-project-desktop" id="p-infotext">
+                    this text is here to inform you that clicking on this box will swap out into the projects.
+                </p>
+            </div>
+            <div onclick="toggleDisplay()" class="projects-box1-desktop" id="p-box1">
+                <h3 class="margins-project-mobile" id="p-h1">pinkgoose school project</h3>
                 <img class="margins-project-mobile" src="images/pinkgoose.PNG" alt="the title of a project called pinkgoose" id="p-img1">
-                <p class="margins-project-desktop">
+                <p class="margins-project-desktop" id="p-p1">
                     pinkgoose was my starting project for website design for my first school periode. We where told to make a website based on a figma design,
                      this was also the first time i did anything with HTML, and in hindsight i could have done a lot different. but i still feel like its inportant to
                     show where we started
                 </p>
             </div>
-            <div class="projects-box2-desktop" id="p-box2">
-                <h3>mastermind school project</h3>
+            <div onclick="toggleDisplay()" class="projects-box2-desktop" id="p-box2">
+                <h3 id="p-h2">mastermind school project</h3>
                 <img src="images/mastermind.picture-figma.jpg" alt="a picture of the boardgame mastermind" class="projects-mastermindimg-desktop" id="p-img2">
-                <p class="margins-project-desktop">
+                <p class="margins-project-desktop" id="p-p2">
                     mastermind was the first java project i made, like pinkgoose this was done in the first periode of my schooling, and the first time i did anything with java
                     this project was also updated in the 2nd periode of classes (though i dont think thats showing on github atm.) 
                 </p>
             </div>
-            <div class="projects-box3-desktop" id="p-box3">
-                <h3>titel project 3</h3>
+            <div onclick="toggleDisplay()" class="projects-box3-desktop" id="p-box3">
+                <h3 id="p-h3">titel project 3</h3>
                 <img src="images/boooks.png" alt="a stack of books, placeholder image" id="p-img3" class="projects-mastermindimg-desktop">
-                <p class="margins-project-desktop">
+                <p class="margins-project-desktop" id="p-p3">
                     this area will be used later to go to a seperate page with my projects, currently this is unnessesairy since I
                      dont have a lot of projects i want to share 
                 </p>
             </div>
         </div>
+
+
+
+
         <!--start more info-->
+        <div class="more-contactmain-desktop">
+            <div class="margins-p-desktop">
+                <h1 class="margins-p-desktop">
+                    contact information
+                </h1>
+                <!-- social media accounts, o.a facebook doorlinken, formulier toevoegen. telefoonnummer/email evt ook. -->
+                <p class="margins-project-desktop">
+                    
+                   placeholder contact information
+                </p>
+            </div>
+        </div>
         <div class="more-workmain-desktop" id="more">
             <div>
                 <h1 class="margins-p-desktop">
@@ -145,20 +196,10 @@
             </div>
             <img class="more-hobbiesIMG-desktop" src="images/skyrim.title2.jpg" alt="skyrim titel logo">
         </div>
-        <div class="more-contactmain-desktop">
-            <div class="margins-p-desktop">
-                <h1 class="margins-p-desktop">
-                    contact information
-                </h1>
-                <!-- social media accounts, o.a facebook doorlinken, formulier toevoegen. telefoonnummer/email evt ook. -->
-                <p class="margins-project-desktop">
-                    
-                   placeholder contact information
-                </p>
-            </div>
-           
-        </div>
     </main>
+
+
+
     <!-- footer-->
     <footer class="footer-main-desktop">
         <div>

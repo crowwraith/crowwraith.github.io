@@ -92,6 +92,12 @@ button i.fa-solid{
 
 
 /* start projects css */
+.projects-info-desktop{
+    display: none;
+}
+.project-infoheader-desktop{
+    display: none;
+}
 .projects-main-desktop{
     display: flex;
     justify-content: space-between;
@@ -294,8 +300,18 @@ button i.fa-solid{
         margin-top: 22px;
         align-items: flex-start;
     }
-    .projects-box1-desktop{
+    .projects-info-desktop{
         display: flex;
+        height: 600px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #021824;
+        border-radius: 25px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .projects-box1-desktop{
+        display: none;
         height: 600px;
         width: 100%;
         flex-direction: column;
@@ -352,9 +368,20 @@ button i.fa-solid{
     }
     .more-hobbiesIMG-desktop{
         display: none;
+        width: 360px;
+        height: 240px;
+        border-radius: 20px;
+        margin-top: 5%;
+        margin-right: 5%;
     }
     .more-contactmain-desktop{
-        display: none;
+        display: flex;
+        width: 	90%;
+        height: 354px;
+        background-color: rgba(2, 24, 36, 0.7);
+        margin-left: 5%;
+        margin-top: 22px;
+        border-radius: 25px;
     }
     /*hiding the footer */
     .footer-main-desktop{
@@ -373,5 +400,5 @@ button i.fa-solid{
     margin-top: 2%;
     margin-right: 5%;
     flex-direction: column;
-}
+    }
 }
