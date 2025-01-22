@@ -21,10 +21,10 @@
                 document.getElementById("p-box1").style.display = "flex";
                 document.getElementById("p-infoheader").style.display = "none";
                 document.getElementById("p-h1").style.display = "flex";
+                document.getElementById("p-infoimg").style.display = "none";
                 document.getElementById("p-img1").style.display = "flex";
                 document.getElementById("p-infotext").style.display = "none";    
                 }
-
                 if(counter == 1){
                 counter++;
                 document.getElementById("p-box1").style.display = "none";
@@ -118,17 +118,18 @@
 
             <div onclick="toggleDisplay()" class="projects-info-desktop" id="p-info">
                 <h3 class="margins-project-mobile" id="p-infoheader">click this box</h3>
+                <img class="margin-info-img" id="p-infoimg" src="images/simple-hand-cursor-free-png.webp" alt="tap this box to go to the next" >
                 <p class="margins-project-desktop" id="p-infotext">
                     this text is here to inform you that clicking on this box will swap out into the projects.
                 </p>
             </div>
             <div onclick="toggleDisplay()" class="projects-box1-desktop" id="p-box1">
-                <h3 class="margins-project-mobile" id="p-h1">pinkgoose school project</h3>
+                <h3 class="margins-project-desktop" id="p-h1">pinkgoose school project</h3>
                 <img class="margins-project-mobile" src="images/pinkgoose.PNG" alt="the title of a project called pinkgoose" id="p-img1">
                 <p class="margins-project-desktop" id="p-p1">
                     pinkgoose was my starting project for website design for my first school periode. We where told to make a website based on a figma design,
                      this was also the first time i did anything with HTML, and in hindsight i could have done a lot different. but i still feel like its inportant to
-                    show where we started
+                    show where we started, mobile users can click this box to go to the next one
                 </p>
             </div>
             <div onclick="toggleDisplay()" class="projects-box2-desktop" id="p-box2">
@@ -136,7 +137,7 @@
                 <img src="images/mastermind.picture-figma.jpg" alt="a picture of the boardgame mastermind" class="projects-mastermindimg-desktop" id="p-img2">
                 <p class="margins-project-desktop" id="p-p2">
                     mastermind was the first java project i made, like pinkgoose this was done in the first periode of my schooling, and the first time i did anything with java
-                    this project was also updated in the 2nd periode of classes (though i dont think thats showing on github atm.) 
+                    this project was also updated in the 2nd periode of classes (though i dont think thats showing on github atm.), mobile users can click this box to go to the next one
                 </p>
             </div>
             <div onclick="toggleDisplay()" class="projects-box3-desktop" id="p-box3">
@@ -144,7 +145,7 @@
                 <img src="images/boooks.png" alt="a stack of books, placeholder image" id="p-img3" class="projects-mastermindimg-desktop">
                 <p class="margins-project-desktop" id="p-p3">
                     this area will be used later to go to a seperate page with my projects, currently this is unnessesairy since I
-                     dont have a lot of projects i want to share 
+                     dont have a lot of projects i want to share,mobile users can click this box to go to the next one
                 </p>
             </div>
         </div>
@@ -156,14 +157,18 @@
         <div class="more-contactmain-desktop">
             <div class="margins-p-desktop">
                 <h1 class="margins-p-desktop">
-                    contact information
+                    contact information:
                 </h1>
                 <!-- social media accounts, o.a facebook doorlinken, formulier toevoegen. telefoonnummer/email evt ook. -->
-                <p class="margins-project-desktop">
-                    
-                   placeholder contact information
-                </p>
+               <div class="margins-p-desktop">
+                <p>email</p>
+                <p> </p>
+                <p>phone</p>
+                <p> </p>
+                <p>adress</p>
+               </div>
             </div>
+            <img class="more-contactimg-desktop" src="images/emailimg.png" alt="email-icon for attention grabbing">
         </div>
         <div class="more-workmain-desktop" id="more">
             <div>
@@ -185,7 +190,7 @@
         <div class="more-hobbiesmain-desktop">
             <div class="margins-p-desktop">
                 <h1 class="margins-p-desktop">
-                    Hobbies
+                    Hobbies    
                 </h1>
                 <p class="margins-project-desktop">
                     Currently Im mostly playing games with friends all around the world, and i quite enjoy reading adventure, fantasy or sci-fi novels.
@@ -208,10 +213,10 @@
                 <div class="center-horizontal-desktop">my github</div>
             </a>
         </div>
-        <div>
+        <div class="header-buttons-desktop">
             <a href="#more">other information</a>
         </div>
-        <div>
+        <div class="header-buttons-desktop">
             <a href="#work">work</a>
         </div>
     </footer>

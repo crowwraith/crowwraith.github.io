@@ -173,6 +173,13 @@ button i.fa-solid{
     margin-top: 22px;
     border-radius: 25px;
 }
+.more-contactimg-desktop{
+    display: flex;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
 /* start footer */
 .footer-main-desktop{
     display: flex;
@@ -220,8 +227,19 @@ button i.fa-solid{
     margin-right: 5%;
     flex-direction: column;
 }
-
-
+.margins-br-desktop{
+    display: flex;
+    margin-top: 5%;
+    width: 200px;
+    height: 200px;
+}
+.margin-info-img{
+    display: flex;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
 
 
 
@@ -383,6 +401,12 @@ button i.fa-solid{
         margin-top: 22px;
         border-radius: 25px;
     }
+    .more-contactimg-desktop{
+        display: none;
+        max-width: 50%;
+        max-height: 50%;
+        margin-left: 30%;
+    }
     /*hiding the footer */
     .footer-main-desktop{
         display: none;
@@ -401,4 +425,18 @@ button i.fa-solid{
     margin-right: 5%;
     flex-direction: column;
     }
+    .margins-br-desktop{
+        display: flex;
+        margin-top: 5%;
+        
+    }
+    .margin-info-img{
+        display: flex;
+        max-width: 50%;
+        max-height: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    
+    
 }
