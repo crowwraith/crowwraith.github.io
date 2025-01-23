@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portofolio Bart Peters</title>
     <link rel="stylesheet" href="style\index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/5321476408.js" crossorigin="anonymous"></script>
+    <!-- font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <script>
     let screensizes = 1000
@@ -66,22 +68,15 @@
 <body>
     <!--start header-->
     <header>
-        <div class="header-Main-desktop">
-            
-            <button class="testkleur"><i class="fa-solid fa-bars"></i></button>
-            
+        <div class="header-Main-desktop">            
             <div class="header-buttonbar-desktop">
 
-                <div class="header-buttons-desktop">
-                    Home
-                </div>
                 <div class="header-buttons-desktop">
                     <a href="#work">Work</a>
                 </div>
                 <div class="header-buttons-desktop">
                     <a href="#more">More information</a>
                 </div>
-
             </div>
             <a href="https://github.com/crowwraith?tab=repositories" target="_blank" class="header-github-desktop">
                 <img src="images/github-kitty.jpg" alt="github logo" class="header-image-desktop">
@@ -102,10 +97,10 @@
                     Hello, I'm Bart Peters.
                     Currently I am a software developer in training, this website was the end project of the
                     second period of classes.
-                    this website is designed to showcase my ability to make websites, though I currently have no intention of
+                    this website is designed to showcase my ability to make websites, though I currently have no intention
                     to pursuit a career in website developement. My preferance would more be towards cybersecurity and
                     problem solving.
-                    At moment of writing I have experience in HLTM, CSS, Java, java-Script and a little PHP.
+                    At moment of writing I have experience in HLTM, CSS, Java, Java-script and a little PHP.
                 </p>
             </div>
             <img class="main-img-desktop" src="images/main-me.jpg" alt="picture of the website maker">
@@ -113,7 +108,7 @@
 
 
 
-        <!-- start projects function nog inzetten-->
+        <!-- start projects, toggleDisplay lets mobile user tap the box to swap to the next one to save space on display-->
         <div class="projects-main-desktop" id="work">
 
             <div onclick="toggleDisplay()" class="projects-info-desktop" id="p-info">
@@ -155,23 +150,22 @@
 
         <!--start more info-->
         <div class="more-contactmain-desktop">
-            <div class="margins-p-desktop">
+            <div class="more-contact-left">
                 <h1 class="margins-p-desktop">
                     Contact information:
                 </h1>
-               <div class="margins-p-desktop">
-                <p>Email</p>
-                <p>1185615@student.roc-nijmegen.nl </p>
-                <p>Phone</p>
-                <p> 06-12345678</p>
-                <p>Adress</p>
-                <p> Heyendaalseweg 98, 6525 EE Nijmegen </p>
+               <div class="more-contactinfo">
+                <p class="margins-contact-info">Email: 1185615@student.roc-nijmegen.com</p>
+                <p class="margins-contact-info">Phone:  06-12345678</p>
+                <p class="margins-contact-info">Adress: Heyendaalseweg 98, 6525 EE Nijmegen</p>
                </div>
             </div>
+            <div class="fussy-img">
             <img class="more-contactimg-desktop" src="images/emailimg.png" alt="email-icon for attention grabbing">
+            </div>
         </div>
         <div class="more-workmain-desktop" id="more">
-            <div>
+            <div class="margins-p-desktop">
                 <h1 class="margins-p-desktop">
                     About past experience
                 </h1>

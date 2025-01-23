@@ -3,6 +3,7 @@ body{
     ,rgb(61, 17, 98),rgb(66, 29, 137),rgb(24, 40, 144),rgb(17, 58, 178),rgb(0, 255, 255));
     color: white;
     margin: 0%;
+    font-family: "Smooch Sans", serif;
 }
 /* start header */
 .header-Main-desktop{
@@ -16,12 +17,6 @@ body{
     background-color: rgb(2, 24, 36);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-}
-button i.fa-solid{
-    display: none;
-}
-.testkleur{
-    display: none;
 }
 .header-buttonbar-desktop{
     display: flex;
@@ -145,6 +140,11 @@ button i.fa-solid{
     width: 180px;
     height: 200px;
 }
+
+
+
+
+
 /* start more information */
 .more-workmain-desktop ,.more-hobbiesmain-desktop{
     display: flex;
@@ -172,14 +172,23 @@ button i.fa-solid{
     margin-left: 5%;
     margin-top: 22px;
     border-radius: 25px;
+    
+}
+.more-contactinfo{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 .more-contactimg-desktop{
     display: flex;
     max-width: 50%;
     max-height: 50%;
-    margin-left: 30%;
+    margin-right: 10%;
     margin-top: 5%;
 }
+
+
+
 /* start footer */
 .footer-main-desktop{
     display: flex;
@@ -227,12 +236,6 @@ button i.fa-solid{
     margin-right: 5%;
     flex-direction: column;
 }
-.margins-br-desktop{
-    display: flex;
-    margin-top: 5%;
-    width: 200px;
-    height: 200px;
-}
 .margin-info-img{
     display: flex;
     max-width: 50%;
@@ -240,8 +243,27 @@ button i.fa-solid{
     margin-left: 25%;
     margin-top: 5%;
 }
-
-
+.margins-contact-info{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+}
+.fussy-img{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+}
+.more-contact-left{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    flex-direction: column;
+    width: 60%;
+}
 
 
 
@@ -258,22 +280,6 @@ button i.fa-solid{
         background-color: rgb(2, 24, 36);
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-    }
-    .testkleur{
-        display: flex;
-        margin-left: 20px;
-        height: 45px;
-        width: 60px;
-        background-color: beige;
-        border-color: darkmagenta;
-        border-radius: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    button i.fa-solid{
-        display: flex;
-
-        font-size: 35px;
     }
     .header-buttonbar-desktop{
         display: none;
